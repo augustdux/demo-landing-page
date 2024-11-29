@@ -1,0 +1,55 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 124px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    &_wrapper-flex{
+        padding-top: 41px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav ul{
+            display: flex;
+            justify-content: space-between;
+            gap: 38px;
+            li a{
+                color: #ffffff;
+                font-family: "FuturaLightC", Arial, sans-serif;
+                font-weight: 300;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.header.scrolled {
+    background-color: var(--header-bg); /* Цвет фона текущей секции */
+    color: var(--header-color, #fff);  /* Цвет текста (опционально) */
+}
+
+.telephone{
+    color: #fff;
+    font-family: "FuturaLightC", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    &_wrapper{
+        display: flex;
+        align-items:center;
+        gap: 10px;
+    }
+    &_wrapper_icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 33px;
+        width: 33px;
+        background-color: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}

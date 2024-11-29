@@ -1,0 +1,27 @@
+.footer {
+    background-color: #333333;
+    &_wrapper-flex {
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 38px;
+        li a {
+            color: #ffffff;
+            font-family: "FuturaLightC", Arial, sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+        }
+    }
+    &_button{
+        width: 261px;
+        height: 56px;
+        background-color: #969AF7;
+        color: #FFFFFF;
+        border-radius: 10px;
+    }
+}

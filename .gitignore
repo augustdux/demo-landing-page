@@ -1,0 +1,84 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log
+.pnpm-debug.log*
+
+# Logs
+logs/
+*.log
+*.log.*
+.log/
+logs/
+
+# Environment
+.env
+.env.*
+*.local
+
+# Build/Output directories
+dist/
+build/
+.cache/
+out/
+.vscode/
+
+# Dependencies
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Testing
+coverage/
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
+
+# SASS/SCSS
+*.sass-cache/
+
+# Generated files
+*.min.js
+*.map
+
+# Temporary files
+*.tmp
+*.temp
+*.backup
+*.bak
+
+# MacOS-specific
+.AppleDouble
+.LSOverride
+
+# Windows-specific
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux-specific
+.trash-*
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose*
+
+# Other CI/CD
+.circleci/
+.github/
+.gitlab-ci.yml

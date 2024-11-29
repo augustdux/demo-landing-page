@@ -1,0 +1,68 @@
+.manufacturers {
+    &_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &_title {
+        font-family: "FuturaDemiC", Arial, sans-serif;
+        font-size: 45px;
+        font-weight: 900;
+        color: #ffffff;
+        padding-top: 130px;
+        padding-bottom: 57px;
+        &_sub {
+            padding-top: 60px;
+            &_line {
+                display: block;
+                font-family: "FuturaBookC", Arial, sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+                color: #ffffff;
+            }
+        }
+    }
+    &_img {
+        &_wrapper {
+            display: flex;
+            gap: 18px;
+        }
+        &-container {
+            width: 242px;
+            height: 174px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            position: relative;
+            cursor: pointer;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    &_slider {
+        display: flex;
+        align-items: center;
+        gap: 71px;
+    }
+    &_circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        position: relative;
+        cursor: pointer;
+        &:first-of-type img {
+            transform: translate(-50%, -50%) scaleX(-1);
+        }
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@use "base/fonts";
+@use "base/variables";
+@use "blocks/header";
+@use "blocks/background";
+@use "blocks/main";
+@use "blocks/profitable";
+@use "blocks/manufacturers";
+@use "blocks/scheme-work";
+@use "blocks/faq";
+@use "blocks/menu";
+@use "blocks/footer";
+@use "base/media";
+
+* {
+    font-family: "FuturaDemiC", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+}
+
+.container {
+    width: 1281px;
+    margin: 0 auto;
+}

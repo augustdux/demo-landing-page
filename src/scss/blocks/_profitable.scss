@@ -1,0 +1,140 @@
+.profitable {
+    background-color: #f2f2f4;
+    &_title{
+        font-family: "FuturaDemiC", Arial, sans-serif;
+        font-size: 45px;
+        font-weight: 900;
+        color: #111111;
+        &_sub{
+            padding-top: 25px;
+            &_line{
+                display: block;
+                text-align: center;
+                font-family: "FuturaBookC", Arial, sans-serif;
+                font-size: 22px;
+                font-weight: 300;
+                color: #030303;
+            }
+        }
+        &_wrapper{
+            padding-top: 85px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.profitable_card {
+    width: 369px;
+    height: 406px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    position: relative;
+    &_wrapper {
+        padding-top: 45px;
+        padding-bottom: 130px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 43px;
+    }
+    &_circle-container {
+        padding-top: 40px;
+        position: relative; /* Для позиционирования кругов и иконки */
+        width: 157px; /* Ширина всего элемента */
+        height: 163px; /* Высота всего элемента */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &_inner_wrapper {
+        width: 358px;
+        height: 305px;
+        margin: 0 auto;
+        padding: 40px 32px 61px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &_title {
+        padding-top: 60px;
+        font-family: "FuturaDemiC", Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        color: #2a336c;
+    }
+    &_title_sub {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+        &_line {
+            display: block;
+            font-family: "FuturaBookC", Arial, sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: #555555;
+        }
+    }
+}
+
+.corner-decorator {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 200px;
+    height: 210px;
+    background: rgba(81, 114, 196, 0.07); 
+    clip-path: polygon(57% 27.52%, 61.5% 23.7%, 66% 20.86%, 70% 19.43%, 75.5% 19.54%, 79.5% 20.97%, 83.50% 24.06%, 90.5% 31.86%, 90% 85.15%, 88% 88.09%, 85.5% 89.66%, 82% 90%, -1% 90%);
+}
+
+.icon-container {
+    border-radius: 50%;
+    width: 112px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.main_circle {
+    border-radius: 50%;
+    width: 112px;
+    height: 112px;
+    background: linear-gradient(to bottom, rgba(4, 10, 87), rgba(58, 35, 230));
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%; /* Делает круг */
+    background: rgba(7, 8, 108, 0.05);
+    width: 112px;
+    height: 112px;
+}
+
+/* Первый круг */
+.circle-1 {
+    top: 45%;
+    left: 28%;
+    z-index: 1;
+}
+
+/* Второй круг */
+.circle-2 {
+    right: 30%;
+    top: 35%;
+    z-index: 2;
+}
+
+.circle-3 {
+    top: 8%;
+    right: 4%;
+    z-index: 3;
+}

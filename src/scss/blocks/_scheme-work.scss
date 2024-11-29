@@ -1,0 +1,120 @@
+.scheme-work {
+    &_button{
+        margin-top: 49px;
+        margin-bottom: 78px;
+    }
+    &_wrapper {
+        padding-top: 46px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 1317px;
+        justify-content: center;
+    }
+    &_title {
+        font-family: "FuturaDemiC", Arial, sans-serif;
+        font-size: 45px;
+        font-weight: 900;
+        color: #111111;
+        &_sub {
+            padding-top: 25px;
+            text-align: center;
+            font-family: "FuturaBookC", Arial, sans-serif;
+            font-size: 22px;
+            font-weight: 300;
+            color: #030303;
+        }
+        &_wrapper {
+            padding-top: 232px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &_card {
+        width: 439px;
+        height: 268px;
+        &_media{
+            display: none;
+        }
+        &_number {
+            font-family: "FuturaDemiC", Arial, sans-serif;
+            font-size: 36px;
+            font-weight: 900;
+            color: #969af7;
+            grid-area: 1 / 1 / 2 / 2;
+            padding: 40px 0 0 38px;
+        }
+        &_title {
+            font-family: "FuturaDemiC", Arial, sans-serif;
+            font-size: 20px;
+            font-weight: 900;
+            color: #ffffff;
+            padding: 48px 0 0 16px;
+            &_line{
+                display: block;
+            }
+            &_sub {
+                padding: 33px 0 0 16px;
+                &_wrapper {
+                    grid-area: 1 / 2 / 2 / 3;
+                }
+                &_line {
+                    display: block;
+                    font-family: "FuturaBookC", Arial, sans-serif;
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: #ffffff;
+                }
+            }
+        }
+        &_grid_wrapper {
+            display: grid;
+            grid-template-columns: 84px 337px;
+        }
+    }
+}
+
+.second_titile_padding{
+    padding: 38px 0 0 16px;
+}
+
+.six_titile_padding{
+    padding: 38px 0 0 16px;
+}
+
+.card_one{
+    background: url('../img/scheme-card-one.png')  no-repeat center center;
+}
+
+.card_two{
+    background: url('../img/scheme-card-two.png')  no-repeat center center;
+}
+
+.card_three{
+    background: url('../img/scheme-card-three.png')  no-repeat center center;
+    height: 297px;
+    width: 415px;
+}
+
+.card_six{
+    background: url('../img/scheme-card-six.png')  no-repeat center center;
+    width: 415px;
+}
+
+.card_five{
+    background: url('../img/scheme-card-five.png')  no-repeat center center;
+    width: 433px;
+}
+
+.card_four{
+    background: url('../img/scheme-card-four.png')  no-repeat center center;
+    width: 444px;
+}
+
+.five_number{
+    padding: 40px 0 0 65px;
+}
+
+.five_sub{
+    padding: 3px 0 0 28px;
+}
