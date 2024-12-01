@@ -1,3 +1,15 @@
+@media (max-width: 3840px) and (min-width: 1921px) {
+
+    .background_main{
+        background-size: cover;
+        background-position: 0% 100%;
+    }
+
+    .background_manufacturers-scheme-faq{
+        background-size: 100% 100%;
+    }
+}
+
 @media (max-width: 1504px) and (min-width: 1201px) {
     .manufacturers_img-container:nth-child(-n + 1) {
         display: none;

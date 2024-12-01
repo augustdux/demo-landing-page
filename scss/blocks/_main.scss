@@ -73,9 +73,13 @@
         font-weight: 300;
         font-size: 22px;
         &::before {
-            content: url("/icons/check.svg");
-            position: absolute;
+            content: '';
+            background: url("/icons/check.svg");
+            width: 14px;
+            height: 11px;
             left: -2.6%;
+            top: 48%;
+            position: absolute;
         }
     }
 }
