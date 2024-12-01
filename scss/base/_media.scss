@@ -560,7 +560,7 @@
         width: 560px;
     }
 
-    .advantage-list ul li:before {
+    .advantage-list_check {
         left: -3.6%;
     }
 
@@ -718,7 +718,8 @@
         font-size: 14px;
     }
 
-    .advantage-list ul li:before {
+    .advantage-list_check {
+        top: 40%;
         left: -7.6%;
     }
 
