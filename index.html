@@ -155,38 +155,42 @@
                             <span class="feedback-block_title_line">ЗАКАЖИТЕ</span>
                             <span class="feedback-block_title_line">ОБРАТНЫЙ ЗВОНОК</span>
                         </div>
-                        <div class="feedback-block_wrapper">
-                            <div class="contact_input">
-                                <label for="name">Ваше имя*</label>
-                                <input required type="text" name="text" id="name" placeholder="Петров Петр">
-                            </div>
-                            <div class="contact_input">
-                                <label for="tel">Ваш номер*</label>
-                                <input class="tel" required type="tel" name="tel" id="tel"
-                                    placeholder="+7 (___)___-__-__">
-                            </div>
-                            <button class="feedback-block_button">
-                                ЗАКАЗАТЬ ЗВОНОК
-                            </button>
-                            <div class="feedback-block_privacy">
-                                <div class="feedback-block_privacy_circle">
-                                    <img src="icons/lock.svg" alt="" class="feedback-block_privacy_icon">
+                        <form action="#" class="contact_form">
+                            <div class="feedback-block_wrapper">
+                                <div class="contact_input">
+                                    <label for="name">Ваше имя*</label>
+                                    <input required type="text" name="text" id="name" placeholder="Петров Петр">
                                 </div>
-                                <div class="feedback-block_privacy_text">
-                                    Мы гарантируем конфиденциальность данных
+                                <div class="contact_input">
+                                    <label for="tel">Ваш номер*</label>
+                                    <input class="tel" required type="tel" name="tel" id="tel"
+                                        placeholder="+7 (___)___-__-__">
                                 </div>
-                            </div>
-                        </div>
+                                <button class="feedback-block_button">
+                                    ЗАКАЗАТЬ ЗВОНОК
+                                </button>
+
+                                <div class="feedback-block_privacy">
+                                    <div class="feedback-block_privacy_circle">
+                                        <img src="icons/lock.svg" alt="" class="feedback-block_privacy_icon">
+                                    </div>
+                                    <div class="feedback-block_privacy_text">
+                                        Мы гарантируем конфиденциальность данных
+                                    </div>
+                                </div>
+                        </form>
                     </div>
-                    <button type="button" onclick="overlayMenu.showModal()" class="feedback-block_button_dialog">
-                        ЗАКАЗАТЬ ЗВОНОК
-                    </button>
-                    <dialog class="feedback-block_dialog" id="overlayMenu">
-                        <div class="feedback-block_title">
-                            <span class="feedback-block_title_line">ЗАКАЖИТЕ</span>
-                            <span class="feedback-block_title_line">ОБРАТНЫЙ ЗВОНОК</span>
-                        </div>
-                        <div class="feedback-block_wrapper">
+                </div>
+                <button type="button" onclick="overlayMenu.showModal()" class="feedback-block_button_dialog">
+                    ЗАКАЗАТЬ ЗВОНОК
+                </button>
+                <dialog class="feedback-block_dialog" id="overlayMenu">
+                    <div class="feedback-block_title">
+                        <span class="feedback-block_title_line">ЗАКАЖИТЕ</span>
+                        <span class="feedback-block_title_line">ОБРАТНЫЙ ЗВОНОК</span>
+                    </div>
+                    <div class="feedback-block_wrapper">
+                        <form action="#" class="contact_form">
                             <div class="contact_input">
                                 <label for="name">Ваше имя*</label>
                                 <input required type="text" name="text" id="name" placeholder="Петров Петр">
@@ -210,15 +214,16 @@
                                     Мы гарантируем конфиденциальность данных
                                 </div>
                             </div>
-                        </div>
-                    </dialog>
-                </div>
-
-
-
-
+                        </form>
+                    </div>
+                </dialog>
             </div>
-        </section>
+
+
+
+
+    </div>
+    </section>
     </div>
 
 
