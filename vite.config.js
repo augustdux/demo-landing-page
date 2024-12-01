@@ -6,7 +6,7 @@ import path from 'path';
 import fs from 'fs'; // Для работы с файловой системой
 
 export default defineConfig({
-    root: './src', // Папка с исходниками
+    root: './', // Папка с исходниками
     build: {
         outDir: '../dist', // Папка для сборки
         emptyOutDir: true, // Очистка перед сборкой
@@ -44,8 +44,8 @@ export default defineConfig({
             apply: 'serve',
             handleHotUpdate({ file }) {
                 if (file.endsWith('.scss')) {
-                    const outputPath = path.resolve(__dirname, './src/css/style.min.css');
-                    const scssFilePath = path.resolve(__dirname, './src/scss/style.scss');
+                    const outputPath = path.resolve(__dirname, './css/style.min.css');
+                    const scssFilePath = path.resolve(__dirname, './scss/style.scss');
 
                     // Компиляция SCSS вручную
                     const sass = require('sass');

@@ -1,7 +1,12 @@
-@media (max-width: 1200px) {
+@media (max-width: 1504px) and (min-width: 1201px) {
+    .manufacturers_img-container:nth-child(-n + 1) {
+        display: none;
+    }
+
     .container {
         max-width: 1140px;
     }
+
     .header {
         &_wrapper-flex {
             justify-content: space-evenly;
@@ -11,6 +16,7 @@
             display: none;
         }
     }
+
     .main {
         padding-top: 130px;
         &_grid_wrapper {
@@ -27,6 +33,7 @@
     .feedback-block {
         display: none;
     }
+
     .feedback-block_dialog {
         width: 385px;
         height: 490px;
@@ -40,15 +47,18 @@
             width: 385px;
         }
     }
+
     .feedback-block_dialog::backdrop {
         opacity: 0;
         scale: 1.05;
         transition-duration: 0.2s;
     }
+
     .feedback-block_dialog[open]::backdrop {
         opacity: 1;
         scale: 1;
     }
+
     .feedback-block_button_dialog {
         margin-top: 50px;
         display: block;
@@ -71,28 +81,35 @@
     .manufacturers_img-container:nth-child(-n + 2) {
         display: none;
     }
+
     .scheme-work_wrapper {
         width: 1140px;
         padding-top: 0;
     }
+
     .scheme-work_title_wrapper {
         padding-top: 132px;
     }
+
     .scheme-work_button {
         margin-bottom: 0;
         margin-top: 20px;
     }
+
     .scheme-work_title {
         padding-top: 0;
         font-size: 27px;
     }
+
     .scheme-work_title_sub {
         padding-top: 0;
         font-size: 16px;
     }
+
     .scheme-work_card {
         margin-top: 20px;
     }
+
     .card_one {
         background: url("../img/scheme-union.png") no-repeat center center;
     }
@@ -145,10 +162,194 @@
     .faq_wrapper {
         padding-top: 120px;
     }
+
     .faq_box_main {
         gap: 220px;
         width: 900px;
     }
+
+    .faq_box_active {
+        .faq_box_answer {
+            width: 900px;
+        }
+    }
+
+    .footer_wrapper-flex {
+        justify-content: space-around;
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .header {
+        &_wrapper-flex {
+            justify-content: space-evenly;
+            gap: 40px;
+        }
+        .telephone {
+            display: none;
+        }
+    }
+
+    .main {
+        padding-top: 130px;
+        &_grid_wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .advantage-list {
+        width: 738px;
+    }
+
+    .feedback-block {
+        display: none;
+    }
+
+    .feedback-block_dialog {
+        width: 385px;
+        height: 490px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        position: absolute;
+        top: 20%;
+        left: 34%;
+        border: none;
+        .feedback-block_title {
+            width: 385px;
+        }
+    }
+
+    .feedback-block_dialog::backdrop {
+        opacity: 0;
+        scale: 1.05;
+        transition-duration: 0.2s;
+    }
+
+    .feedback-block_dialog[open]::backdrop {
+        opacity: 1;
+        scale: 1;
+    }
+
+    .feedback-block_button_dialog {
+        margin-top: 50px;
+        display: block;
+        color: #ffffff;
+        width: 300px;
+        height: 56px;
+        background-color: #ffa500;
+        font-family: "FuturaMediumC", Arial, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+    .feedback-block_button_close {
+        position: absolute;
+        top: 3%;
+        left: 92%;
+    }
+
+    .manufacturers_img-container:nth-child(-n + 2) {
+        display: none;
+    }
+
+    .scheme-work_wrapper {
+        width: 1140px;
+        padding-top: 0;
+    }
+
+    .scheme-work_title_wrapper {
+        padding-top: 132px;
+    }
+
+    .scheme-work_button {
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    .scheme-work_title {
+        padding-top: 0;
+        font-size: 27px;
+    }
+
+    .scheme-work_title_sub {
+        padding-top: 0;
+        font-size: 16px;
+    }
+
+    .scheme-work_card {
+        margin-top: 20px;
+    }
+
+    .card_one {
+        background: url("../img/scheme-union.png") no-repeat center center;
+    }
+
+    .card_two {
+        background: url("../img/scheme-union.png") no-repeat center center;
+    }
+
+    .card_three {
+        background: url("../img/scheme-union.png") no-repeat center center;
+        height: 268px;
+        width: 439px;
+    }
+
+    .card_six {
+        background: url("../img/scheme-union.png") no-repeat center center;
+        height: 268px;
+        width: 439px;
+    }
+
+    .card_five {
+        background: url("../img/scheme-union.png") no-repeat center center;
+        height: 268px;
+        width: 439px;
+    }
+
+    .card_four {
+        background: url("../img/scheme-union.png") no-repeat center center;
+        height: 268px;
+        width: 439px;
+    }
+
+    .five_number {
+        padding: 40px 0 0 43px;
+    }
+
+    .five_sub {
+        padding: 3px 0 0 0;
+    }
+
+    .scheme-work_card {
+        &_media {
+            display: unset;
+        }
+        &_visible {
+            display: none;
+        }
+    }
+
+    .faq_wrapper {
+        padding-top: 120px;
+    }
+
+    .faq_box_main {
+        gap: 220px;
+        width: 900px;
+    }
+
     .faq_box_active {
         .faq_box_answer {
             width: 900px;
@@ -169,13 +370,16 @@
     .container {
         max-width: 960px;
     }
+
     .scheme-work_wrapper {
         width: 960px;
         padding-top: 0;
     }
+
     .header_wrapper-flex nav ul {
         gap: 21px;
     }
+
     .footer_wrapper-flex ul {
         justify-items: center;
     }
@@ -185,6 +389,7 @@
     .container {
         max-width: 720px;
     }
+
     .header_wrapper-flex {
         gap: 20px;
         nav ul {
@@ -197,6 +402,7 @@
     .title_main_line--first {
         font-size: 71px;
     }
+
     .title_main_line--second {
         font-size: 61px;
     }
@@ -204,9 +410,11 @@
     .profitable_title_wrapper {
         padding-top: 163px;
     }
+
     .manufacturers_title {
         padding-top: 108px;
     }
+
     .manufacturers_circle {
         display: none;
     }
@@ -227,20 +435,16 @@
         width: auto;
         border-radius: 10px;
     }
+
     .scheme-work_card_grid_wrapper {
         display: flex;
         align-items: center;
     }
 
-    .scheme-work_card_number {
-        // padding: 5px;
-    }
-    .scheme-work_card_title {
-        // padding-top: 13px;
-    }
     .scheme-work_card_title_sub {
         display: none;
     }
+
     .scheme-work_wrapper {
         flex-direction: column;
     }
@@ -280,15 +484,18 @@
     .faq_wrapper {
         padding-top: 11 0px;
     }
+
     .faq_box_main {
         gap: 45px;
         width: 720px;
     }
+
     .faq_box_active {
         .faq_box_answer {
             width: 720px;
         }
     }
+
     .footer_wrapper-flex {
         justify-content: center;
         ul {
@@ -298,6 +505,7 @@
             display: none;
         }
     }
+
     .footer_button {
         display: none;
     }
@@ -307,46 +515,59 @@
     .container {
         max-width: 540px;
     }
-    header{
+
+    header {
         display: none;
     }
-    .hamburger{
+
+    .hamburger {
         display: flex;
     }
 
-    .main{
+    .main {
         padding-top: 78px;
     }
-    .title_main_line--first{
+
+    .title_main_line--first {
         font-size: 54px;
     }
+
     .title_main_line--second {
         font-size: 46px;
     }
+
     .title_main_line--third {
         font-size: 50px;
     }
-    .title_sub_line{
+
+    .title_sub_line {
         font-size: 19px;
     }
-    .advantage-list{
+
+    .advantage-list {
         width: 560px;
     }
-    .advantage-list ul li:before{
+
+    .advantage-list ul li:before {
         left: -3.6%;
     }
-    .feedback-block_dialog{
+
+    .feedback-block_dialog {
         left: 18%;
     }
-    .profitable_title_wrapper{
+
+    .profitable_title_wrapper {
         padding-top: 19px;
     }
-    .manufacturers_title{
+
+    .manufacturers_title {
         padding-top: 111px;
     }
-    .manufacturers_img-container:nth-child(-n+4) {
+
+    .manufacturers_img-container:nth-child(-n + 4) {
         display: none;
     }
+
     .scheme-work_wrapper {
         width: 540px;
     }
@@ -354,6 +575,7 @@
     .scheme-work_title_wrapper {
         padding-top: 119px;
     }
+
     .scheme-work_card {
         margin-top: 15px;
     }
@@ -363,6 +585,7 @@
         width: auto;
         border-radius: 10px;
     }
+
     .scheme-work_card_grid_wrapper {
         display: flex;
         align-items: center;
@@ -371,6 +594,7 @@
     .scheme-work_card_title_sub {
         display: none;
     }
+
     .scheme-work_wrapper {
         flex-direction: column;
     }
@@ -406,19 +630,26 @@
     .card_four {
         background: linear-gradient(170deg, rgba(4, 10, 87), rgba(58, 35, 230));
     }
+
     .faq_wrapper {
         padding-top: 11 0px;
     }
+
     .faq_box_main {
         gap: 5px;
         width: 540px;
         font-size: 18px;
     }
+
     .faq_box_active {
         .faq_box_answer {
             width: 540px;
         }
+        .faq_box_answer_text{
+            font-size: 17px;
+        }
     }
+
     .footer_wrapper-flex {
         justify-content: center;
         ul {
@@ -428,84 +659,122 @@
             display: none;
         }
     }
+
     .footer_button {
         display: none;
     }
-
 }
 
 @media (max-width: 575px) and (min-width: 320px) {
     .container {
         max-width: 300px;
     }
-    header{
+
+    header {
         display: none;
     }
-    .hamburger{
+
+    .hamburger {
         display: flex;
     }
 
-    .main{
+    .main {
         padding-top: 78px;
     }
-    .title_main_line--first{
+
+    .title_main_line--first {
         font-size: 30px;
     }
+
     .title_main_line--second {
         font-size: 25px;
     }
+
     .title_main_line--third {
         font-size: 27px;
     }
-    .title_sub_line{
+
+    .title_sub_line {
         font-size: 16px;
     }
-    .advantage-list{
+
+    .advantage-list {
         width: 300px;
     }
+
     .advantage-list ul li {
         font-size: 14px;
     }
 
-    .advantage-list ul li:before{
+    .advantage-list ul li:before {
         left: -7.6%;
     }
-    .profitable_title{
+
+    .profitable_title {
         text-align: center;
     }
-    .feedback-block_dialog{
+
+    .profitable_card_inner_wrapper{
+        width: 300px;
+    }
+
+    .profitable_card_title{
+        font-size: 19px;
+    }
+
+    .profitable_card_title_sub_line{
+        font-size: 16px;
+    }
+    
+    .corner-decorator{
+        clip-path: polygon(57% 27.52%, 61.5% 23.7%, 66% 20.86%, 70% 19.43%, 75.5% 19.54%, 79.5% 20.97%, 83.5% 24.06%, 95% 31.86%, 95% 84.67%, 91.5% 89.04%, 87.00% 90.61%, 82% 90%, -1% 90%);
+        right: -10px;
+        bottom: -21px;
+    }
+
+    .feedback-block_dialog {
         left: 7%;
         width: 300px;
         height: 497px;
     }
+
     .feedback-block_dialog .feedback-block_title {
         width: 300px;
     }
+
     .feedback-block_wrapper {
         width: 232px;
     }
+
     .contact_input input {
         width: 232px;
     }
-    .profitable_title_wrapper{
+
+    .profitable_title_wrapper {
         padding-top: 19px;
     }
-    .manufacturers_title{
+
+    .manufacturers_title {
         padding-top: 55px;
         text-align: center;
     }
-    .manufacturers_img-container:nth-child(-n+4) {
+
+    .manufacturers_img-container:nth-child(-n + 4) {
         display: none;
     }
-    .manufacturers_circle{
+
+    .manufacturers_circle {
         display: none;
     }
-    .manufacturers_title_sub_line{
+
+    .manufacturers_title_sub_line {
         font-size: 17px;
     }
+
     .scheme-work_wrapper {
         width: 300px;
     }
+
     .scheme-work_card_title {
         padding: 40px 0 0 16px;
     }
@@ -513,6 +782,7 @@
     .scheme-work_title_wrapper {
         padding-top: 119px;
     }
+
     .scheme-work_card {
         margin-top: 15px;
     }
@@ -522,6 +792,7 @@
         width: auto;
         border-radius: 10px;
     }
+
     .scheme-work_card_grid_wrapper {
         display: flex;
         align-items: center;
@@ -565,25 +836,31 @@
     .card_four {
         background: linear-gradient(170deg, rgba(4, 10, 87), rgba(58, 35, 230));
     }
+
     .faq_wrapper {
         padding-top: 67px;
     }
+
     .faq_box_main {
         text-align: center;
         width: 300px;
         font-size: 18px;
     }
-    .faq_circle{
+
+    .faq_circle {
         display: none;
     }
+
     .faq_box_active {
         .faq_box_answer {
             width: 300px;
         }
     }
-    .faq_box_active .faq_box_answer_text{
+
+    .faq_box_active .faq_box_answer_text {
         font-size: 11px;
     }
+
     .footer_wrapper-flex {
         justify-content: center;
         ul {
@@ -593,11 +870,12 @@
             display: none;
         }
     }
+
     .footer_button {
         display: none;
     }
+
     .footer ul li a {
         font-size: 14px;
     }
-
 }
