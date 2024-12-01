@@ -1,11 +1,10 @@
 @media (max-width: 3840px) and (min-width: 1921px) {
-
-    .background_main{
+    .background_main {
         background-size: cover;
         background-position: 0% 100%;
     }
 
-    .background_manufacturers-scheme-faq{
+    .background_manufacturers-scheme-faq {
         background-size: 100% 100%;
     }
 }
@@ -442,6 +441,22 @@
         padding-top: 163px;
     }
 
+    .scheme-work_card_title--one {
+        padding: 42px 0 0 16px;
+    }
+
+    .scheme-work_card_title--four {
+        padding: 37px 0 0 16px;
+    }
+
+    .scheme-work_card_title--six {
+        padding: 40px 0 0 16px;
+    }
+
+    .second_titile_padding {
+        padding: 40px 0 0 16px;
+    }
+
     .scheme-work_card {
         height: 120px;
         width: auto;
@@ -588,6 +603,14 @@
         padding-top: 119px;
     }
 
+    .scheme-work_card_title--four {
+        padding: 37px 0 0 16px;
+    }
+
+    .scheme-work_card_title--six {
+        padding: 40px 0 0 16px;
+    }
+
     .scheme-work_card {
         margin-top: 15px;
     }
@@ -657,7 +680,7 @@
         .faq_box_answer {
             width: 540px;
         }
-        .faq_box_answer_text{
+        .faq_box_answer_text {
             font-size: 17px;
         }
     }
@@ -727,20 +750,34 @@
         text-align: center;
     }
 
-    .profitable_card_inner_wrapper{
+    .profitable_card_inner_wrapper {
         width: 300px;
     }
 
-    .profitable_card_title{
+    .profitable_card_title {
         font-size: 19px;
     }
 
-    .profitable_card_title_sub_line{
+    .profitable_card_title_sub_line {
         font-size: 16px;
     }
-    
-    .corner-decorator{
-        clip-path: polygon(57% 27.52%, 61.5% 23.7%, 66% 20.86%, 70% 19.43%, 75.5% 19.54%, 79.5% 20.97%, 83.5% 24.06%, 95% 31.86%, 95% 84.67%, 91.5% 89.04%, 87.00% 90.61%, 82% 90%, -1% 90%);
+
+    .corner-decorator {
+        clip-path: polygon(
+            57% 27.52%,
+            61.5% 23.7%,
+            66% 20.86%,
+            70% 19.43%,
+            75.5% 19.54%,
+            79.5% 20.97%,
+            83.5% 24.06%,
+            95% 31.86%,
+            95% 84.67%,
+            91.5% 89.04%,
+            87% 90.61%,
+            82% 90%,
+            -1% 90%
+        );
         right: -10px;
         bottom: -21px;
     }
@@ -790,6 +827,14 @@
 
     .scheme-work_card_title {
         padding: 40px 0 0 16px;
+    }
+
+    .scheme-work_card_number{
+        padding: 40px 0 0 25px;
+    }
+
+    .individual_titile_padding {
+        padding: 20px 0 0 16px;
     }
 
     .scheme-work_title_wrapper {

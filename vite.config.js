@@ -8,7 +8,7 @@ import fs from 'fs'; // Для работы с файловой системой
 export default defineConfig({
     root: './', // Папка с исходниками
     build: {
-        outDir: '../dist', // Папка для сборки
+        outDir: './dist', // Папка для сборки
         emptyOutDir: true, // Очистка перед сборкой
         cssCodeSplit: false, // Собираем весь CSS в один файл
         rollupOptions: {
