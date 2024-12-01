@@ -62,6 +62,15 @@
     border-radius: 10px; /* Сглаженные края */
     border: 1px none rgba(150, 154, 247, 1); /* Граница с цветом */
     box-sizing: border-box; /* Включает границу в общий размер блока */
+
+    &_check{
+        width: 14px;
+        height: 11px;
+        left: -2.6%;
+        position: absolute;
+        top: 22%;
+    }
+    
     ul {
         padding: 20px 0 25px 30px;
     }
@@ -72,15 +81,6 @@
         font-family: "FuturaBookC", Arial, sans-serif;
         font-weight: 300;
         font-size: 22px;
-        &::before {
-            content: '';
-            background: url("/icons/check.svg");
-            width: 14px;
-            height: 11px;
-            left: -2.6%;
-            top: 48%;
-            position: absolute;
-        }
     }
 }
 
